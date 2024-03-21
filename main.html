@@ -10,6 +10,7 @@
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
+
 <form id="form" name="form" method="post">
 <label for="name">Name:</label>
 <input type="text" id="name" name="name" placeholder="Name" required><br><br>
@@ -18,25 +19,29 @@
 <label for="gender">Gender:</label>
 <input type="radio" id="gender_m" name="gender" required>Male
 <input type="radio" id="gender_f" name="gender" required>Female <br><br>
-<label for="carbrands">Car Brands:</label>
-<select id="cars" aria-placeholder="--Please choose an option--" required>
-    <option value="choosecar">--Please choose an option--</option>
+<label for="cars">Car Brands:</label>
+<select name="cars" id="cars" required>
+    <option value="option">--Please choose an option--</option>
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="mercedes">Mercedes</option>
+  <option value="audi">Audi</option>
 </select><br><br>
 <label for="age">Age:</label>
 <input type="number" id="age" name="age" placeholder="Age" required>
  <br><br>
 <label for="dob">DOB:</label>
-<input type="Date" id="dob" name="dob"/>
+<input type="Date" id="dob" name="dob" required>
 <br><br>
-<label for="phone">Phone Number:</label>
-<input type="tel" id="tel" name="tel" placeholder="xxx-xxx-xxxx" >
+<label for="tel">Phone Number:</label>
+<input type="Tel" id="tel" name="tel" placeholder="xxx-xxx-xxxx" >
 <br><br>
 <label for="password">Password:</label>
 <input type="password" id="password" name="password" placeholder="Password" required/>
 <br><br>
-<label for="agree">I agree to the TOS</label>
-<input type="checkbox" id="tos" required><br><br>
-<input type="submit" vale="submit">
+<label for="tos">I agree to the TOS</label>
+<input type="checkbox" id="tos" name="tos" required><br><br>
+<button type="submit" value="submit">Submit</button>
 </form>
 </body>
 
